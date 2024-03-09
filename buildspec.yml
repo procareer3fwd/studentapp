@@ -12,12 +12,9 @@ phases:
       - npm run build
 
 artifacts:
-  files: 
-    - public/**/*
-    - src/**/*
-    - server.js
-    - package.json
-    - scripts/**/*
+  files:
+    - "**/*"
+  base-directory: "./"
 
 post_build:
   commands:
