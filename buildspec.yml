@@ -1,20 +1,20 @@
-ersion: 0.2
+version: 0.2
 
 phases:
   install:
     runtime-versions:
-      nodejs: 20
-   
+      nodejs: 14
     commands:
-        # install npm
-        - npm install
-       
+      - npm install
+
   build:
     commands:
-        # run build script
-        - npm run build
-     
+      - npm run build
+
 artifacts:
-  # include all files required to run the application
-  files:
-    - '**/*'
+  files: '**/*'
+  discard-paths: yes
+
+post_build:
+  commands:
+    - npm start
