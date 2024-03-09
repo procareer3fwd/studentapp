@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 function AjaxAxiosGetDB(props) {
     const [datax, setData] = useState([{ name: 'Prameela', branch: 'Mech', rno: 301 }]);
     useEffect(()=>{
-        axios.get("http://localhost:8086/showdata")
+        axios.get("/api/showdata")
         .then(res=>{
             setData(res.data)
         })

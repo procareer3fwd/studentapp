@@ -17,7 +17,7 @@ function MyForm() {
     e.preventDefault();
 
     // Make a POST request to the Express server
-    axios.post('http://localhost:8086/submitdata', formData)
+    axios.post('/api/submitdata', formData)
     .then(response => {
         console.log(response.data);
         // Handle success, reset form, update UI, etc.
