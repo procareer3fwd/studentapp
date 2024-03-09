@@ -13,3 +13,5 @@ git push -u origin main
 
 
 https://github.com/nagireddykmit/studentapp.git
+
+Added all stages
