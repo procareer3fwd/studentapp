@@ -14,6 +14,7 @@ phases:
 artifacts:
   files:
     - "**/*"
+    - "scripts/**/*"
   base-directory: "./"
 
 post_build:
