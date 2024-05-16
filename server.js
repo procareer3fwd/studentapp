@@ -18,7 +18,7 @@ app.listen(PORT,(err,data)=>{
 //connecting to MongoDB cluster0
 mongoose.connect(`mongodb+srv://venu:venu123@cluster0.8qjztwk.mongodb.net/?retryWrites=true&w=majority`)
 .then(()=>{
-    console.log(`MongoDB Connected on MongoDB Cluster`)
+    console.log(`MongoDB Connected on MongoDB Atlas Cluster`)
 })
 .catch((err)=>{ 
     console.log(`MongoDB Not Connected Problem: ${err}`)
